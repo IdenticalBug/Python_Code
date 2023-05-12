@@ -1,0 +1,5 @@
+x = input("enter the price of meal pre-tip ")
+x = float(x)
+print("tip if takeout or buffet "+str(x*0.1))
+print("minimum if dine in "+str(x*0.15))
+print("max if dine-in "+str(x*0.2))
