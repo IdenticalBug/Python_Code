@@ -1,8 +1,12 @@
 from time import sleep
 
+# Asks for user input
 username = input('Please enter a '\
                      'username: ')
-if len(username) >= 8:
+
+# Checks for correct length of Username and loops if 
+# username length is incorrect
+if len(username) >= 8:             
     print('Your username is valid!')
 
 else:
@@ -17,7 +21,8 @@ else:
         
     print('Your username is valid!')
 
-
+# Checks for correct length of Password and loops if 
+# password length is incorrect
 password = input('Please enter a '\
                     'password: ')
 
@@ -37,6 +42,7 @@ else:
 
     print('Your password is valid!')
 
+# Prints username and password
 sleep(1)
 print(f'Your username is {username}')
 sleep(1)

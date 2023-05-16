@@ -22,11 +22,13 @@ def getAnswer(answerNumber):
 
 while True:
     print('Welcome to Hal\'s Fortune Teller')
-    input('What would you like to know? ')
-    answerNumber = random.randint(1,8)
-    fortune = getAnswer(answerNumber)
+    input('What would you like to know? ')  # Asks for user input
+    answerNumber = random.randint(1,8)      
+    fortune = getAnswer(answerNumber)	    # Gives random answer depning on random integer 
     answerAgain = input('Would you like to know another fortune? y/n ')
 
+# Asks the user if they would like another fortune
+# Exits program if no
     while answerAgain == 'Y':
         continue
     if answerAgain == 'N' or 'n':
